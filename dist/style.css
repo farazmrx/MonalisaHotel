@@ -18,6 +18,58 @@ ul, li {
 a {
   text-decoration: none; }
 
+.mainpage__container {
+  display: grid;
+  grid-template-rows: 6rem calc(100vh - 6rem) min-content 35vw repeat(3, min-content) 35vw min-content;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .mainpage__container > * {
+    font-size: 20px;
+    padding: 10px; }
+
+.hero {
+  background-color: aqua;
+  grid-column: full-start / full-end; }
+
+.testimonial {
+  grid-column: col-start 3 / col-end 10;
+  background-color: brown; }
+
+.footer {
+  background-color: peru;
+  grid-column: full-start / full-end; }
+
+.header {
+  background-color: blue;
+  grid-column: full-start / full-end; }
+
+.mainpage__aboutus {
+  background-color: purple;
+  grid-column: center-start / center-end; }
+
+.mainpage__ourrooms--content {
+  background-color: red;
+  grid-column: full-start / col-end 5; }
+
+.mainpage__ourrooms--picture {
+  background-color: wheat;
+  grid-column: col-start 6 / full-end; }
+
+.mainpage__explore {
+  background-color: greenyellow;
+  grid-column: col-start 2 / col-end 11; }
+
+.mainpage__gallery {
+  background-color: gray;
+  grid-column: full-start / full-end; }
+
+.mainpage__information--map {
+  background-color: yellow;
+  grid-column: full-start / col-end 7; }
+
+.mainpage__information--content {
+  background-color: orange;
+  grid-column: col-start 8 / full-end; }
+
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome
  *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)

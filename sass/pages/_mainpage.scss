@@ -1,0 +1,41 @@
+.mainpage {
+
+    &__aboutus {
+        background-color: purple;
+        grid-column: center-start / center-end;
+    }
+
+    &__ourrooms {
+        &--content {
+            background-color: red;
+            grid-column: full-start / col-end 5;
+        }
+
+        &--picture {
+            background-color: wheat;
+            grid-column: col-start 6 / full-end;
+        }
+    }
+
+    &__explore {
+        background-color: greenyellow;
+        grid-column: col-start 2 / col-end 11;
+    }
+
+    &__gallery {
+        background-color: gray;
+        grid-column: full-start / full-end;
+    }
+
+    &__information {
+        &--map {
+            background-color: yellow;
+            grid-column: full-start / col-end 7;
+        }
+
+        &--content {
+            background-color: orange;
+            grid-column: col-start 8 / full-end;
+        }
+    }
+}

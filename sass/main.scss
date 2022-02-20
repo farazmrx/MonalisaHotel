@@ -6,6 +6,12 @@
 @import "base/typographi";
 @import "base/utilities";
 
+@import "components/hero";
+@import "components/testimonial";
+
+@import "layout/footer";
+@import "layout/header";
+
 @import "pages/aboutus";
 @import "pages/mainpage";
 @import "pages/reservation";

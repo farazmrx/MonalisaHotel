@@ -1,0 +1,15 @@
+@import "abstracts/mixin";
+@import "abstracts/variable";
+
+@import "base/base";
+@import "base/animation";
+@import "base/typographi";
+@import "base/utilities";
+
+@import "pages/aboutus";
+@import "pages/mainpage";
+@import "pages/reservation";
+@import "pages/roomdetails";
+@import "pages/roomlisting";
+
+@import "vendors/font-awesome";

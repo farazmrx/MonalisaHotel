@@ -58,7 +58,34 @@ a {
 
 .testimonial {
   grid-column: col-start 3 / col-end 10;
-  background-color: brown; }
+  background-color: #fefefe;
+  margin: 10rem 0;
+  text-align: center;
+  padding: 6rem; }
+  .testimonial__content--sub {
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    color: #acb9c8; }
+  .testimonial__content--main {
+    margin: 1.8rem 0 3rem 0;
+    font-size: 3.2rem;
+    font-weight: 700;
+    font-family: "Poppins", sans-serif; }
+  .testimonial__content--paragraph {
+    font-size: 2rem;
+    font-family: "Redressed", cursive; }
+  .testimonial__content--stars {
+    margin: 1.8rem 0 3rem 0; }
+  .testimonial__content--trip {
+    margin: 2rem; }
+    .testimonial__content--trip img {
+      width: 12rem; }
+  .testimonial__content span {
+    font-size: 1rem; }
+
+.fa-star::before {
+  color: #f5b846;
+  font-size: 1.5rem; }
 
 .footer {
   background-color: peru;

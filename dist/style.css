@@ -13,7 +13,7 @@ html {
   font-size: 62.5%; }
 
 body {
-  background-color: #eeeeee; }
+  background-color: #ebebeb; }
 
 ul, li {
   list-style: none; }
@@ -25,6 +25,19 @@ a {
   display: grid;
   grid-template-rows: 7rem calc(100vh - 7rem) min-content 35vw repeat(2, min-content) 35vw min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+
+.header__primery {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  color: #acb9c8;
+  word-spacing: 4px;
+  letter-spacing: 1.5px; }
+
+.header__secondary {
+  margin: 1.8rem 0 3rem 0;
+  font-size: 3.2rem;
+  font-weight: 700;
+  font-family: "Poppins", sans-serif; }
 
 .hero {
   background-image: linear-gradient(rgba(250, 235, 33, 0.4), rgba(250, 174, 33, 0.4)), url(../img/mainpage-header.jpg);
@@ -38,7 +51,7 @@ a {
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
-    color: #fefefe; }
+    color: #ffffff; }
     .hero__text--sub {
       font-size: 1.6rem;
       letter-spacing: 2px;
@@ -58,19 +71,10 @@ a {
 
 .testimonial {
   grid-column: col-start 3 / col-end 10;
-  background-color: #fefefe;
+  background-color: #ffffff;
   margin: 10rem 0;
   text-align: center;
   padding: 6rem; }
-  .testimonial__content--sub {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-    color: #acb9c8; }
-  .testimonial__content--main {
-    margin: 1.8rem 0 3rem 0;
-    font-size: 3.2rem;
-    font-weight: 700;
-    font-family: "Poppins", sans-serif; }
   .testimonial__content--paragraph {
     font-size: 2rem;
     font-family: "Redressed", cursive; }

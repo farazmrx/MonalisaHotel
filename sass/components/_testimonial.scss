@@ -6,19 +6,6 @@
     padding: 6rem;
 
     &__content {
-        &--sub {
-            font-size: 1.2rem;
-            text-transform: uppercase;
-            color: $color-gray-dark-1;
-        }
-
-        &--main {
-            margin: 1.8rem 0 3rem 0;
-            font-size: 3.2rem;
-            font-weight: 700;
-            font-family: $font-poppins;
-        }
-
         &--paragraph {
             font-size: 2rem;
             font-family: $font-redressed;

@@ -22,9 +22,6 @@ a {
   display: grid;
   grid-template-rows: 8rem calc(100vh - 8rem) min-content 35vw repeat(3, min-content) 35vw min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
-  .mainpage__container > * {
-    font-size: 20px;
-    padding: 10px; }
 
 .hero {
   background-color: aqua;
@@ -42,7 +39,8 @@ a {
   grid-column: full-start / full-end;
   display: flex;
   justify-content: space-evenly;
-  align-items: center; }
+  align-items: center;
+  font-size: 2rem; }
   .header__list {
     display: flex; }
   .header__item {

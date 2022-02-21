@@ -1,4 +1,44 @@
 .header {
-    background-color: blue;
     grid-column: full-start / full-end;
+
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+
+    &__list {
+        display: flex;
+    }
+
+    &__item {
+        margin: 0 .8rem;
+    }
+
+    &__link {
+        color: $color-black;
+        transition: all .3s ease-out;
+
+        &--active {
+            color: $color-gray-dark-1;
+        }
+
+        &:hover {
+            color: $color-gray-dark-1;
+        }
+    }
+
+    &__logo {
+        text-align: center;
+
+        span {
+            h1 {
+                font-family: $font-lobster;
+            }
+
+            h5 {
+                font-family: $font-the-nautigal;
+                font-weight: 700;
+            }
+        }
+    }
 }

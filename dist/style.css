@@ -20,7 +20,7 @@ a {
 
 .mainpage__container {
   display: grid;
-  grid-template-rows: 6rem calc(100vh - 6rem) min-content 35vw repeat(3, min-content) 35vw min-content;
+  grid-template-rows: 8rem calc(100vh - 8rem) min-content 35vw repeat(3, min-content) 35vw min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
   .mainpage__container > * {
     font-size: 20px;
@@ -39,8 +39,28 @@ a {
   grid-column: full-start / full-end; }
 
 .header {
-  background-color: blue;
-  grid-column: full-start / full-end; }
+  grid-column: full-start / full-end;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center; }
+  .header__list {
+    display: flex; }
+  .header__item {
+    margin: 0 .8rem; }
+  .header__link {
+    color: #000000;
+    transition: all .3s ease-out; }
+    .header__link--active {
+      color: #acb9c8; }
+    .header__link:hover {
+      color: #acb9c8; }
+  .header__logo {
+    text-align: center; }
+    .header__logo span h1 {
+      font-family: "Lobster", cursive; }
+    .header__logo span h5 {
+      font-family: "The Nautigal", cursive;
+      font-weight: 700; }
 
 .mainpage__aboutus {
   background-color: purple;

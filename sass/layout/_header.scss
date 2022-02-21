@@ -4,7 +4,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1.6rem;
 
     &__list {
         display: flex;
@@ -16,6 +16,7 @@
 
     &__link {
         color: $color-black;
+        text-transform: uppercase;
         transition: all .3s ease-out;
 
         &--active {

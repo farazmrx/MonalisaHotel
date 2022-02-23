@@ -123,12 +123,40 @@ a {
       font-weight: 700; }
 
 .mainpage__ourrooms--content {
-  background-color: red;
-  grid-column: full-start / col-end 5; }
+  grid-column: full-start / col-end 5;
+  background-color: #ffffff;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center; }
 
 .mainpage__ourrooms--picture {
-  background-color: wheat;
+  background-image: url(../img/mainpage-room.jpg);
+  background-position: center;
+  background-size: cover;
   grid-column: col-start 6 / full-end; }
+
+.mainpage__ourrooms--group {
+  display: grid;
+  grid-template-columns: min-content max-content;
+  grid-column-gap: 1rem;
+  padding: 1rem;
+  align-items: center;
+  cursor: pointer;
+  transition: all .3s; }
+  .mainpage__ourrooms--group:not(:last-child) {
+    margin-bottom: 1rem; }
+  .mainpage__ourrooms--group:hover {
+    background-color: #d7d5d2; }
+  .mainpage__ourrooms--group-active {
+    background-color: #d7d5d2; }
+  .mainpage__ourrooms--group img {
+    width: 10rem;
+    grid-row: 1 / span 2; }
+  .mainpage__ourrooms--group h2 {
+    font-size: 1.8rem;
+    font-family: "Playfair Display", serif; }
+  .mainpage__ourrooms--group span strong {
+    font-size: 1.3rem; }
 
 .mainpage__explore {
   background-color: greenyellow;

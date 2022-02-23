@@ -34,10 +34,24 @@ a {
   letter-spacing: 1.5px; }
 
 .header__secondary {
-  margin: 1.8rem 0 3rem 0;
   font-size: 3.2rem;
   font-weight: 700;
   font-family: "Poppins", sans-serif; }
+
+.u-mb-smaller {
+  margin-bottom: 1rem; }
+
+.u-mb-small {
+  margin-bottom: 2rem; }
+
+.u-mb-medium {
+  margin-bottom: 4rem; }
+
+.u-mb-large {
+  margin-bottom: 6rem; }
+
+.u-mb-larger {
+  margin-bottom: 8rem; }
 
 .hero {
   background-image: linear-gradient(rgba(250, 235, 33, 0.4), rgba(250, 174, 33, 0.4)), url(../img/mainpage-header.jpg);

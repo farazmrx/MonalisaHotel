@@ -20,12 +20,17 @@
             text-transform: uppercase;
             font-weight: 500;
             font-family: $font-poppins;
+            display: block;
+            animation: moveDown .8s;
         }
 
         &--main {
             margin: 1.6rem 0 1rem 0;    
             font-size: 7rem;
             font-family: $font-playfair;
+            animation: moveRight 1s;
+            animation-delay: .7s;
+            animation-fill-mode: backwards;
         }
 
         &--paragraph {
@@ -33,6 +38,9 @@
             font-weight: 300;
             font-style: italic;
             font-family: $font-poppins;
+            animation: moveLeft .6s;
+            animation-delay: 1.6s;
+            animation-fill-mode: backwards;
         }
     }
 }

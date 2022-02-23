@@ -26,6 +26,36 @@ a {
   grid-template-rows: 7rem calc(100vh - 7rem) min-content 35vw repeat(2, min-content) 35vw min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
 
+@keyframes moveDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-100px); }
+  80% {
+    transform: translateY(10px); }
+  100% {
+    opacity: 1;
+    transform: translateY(0); } }
+
+@keyframes moveRight {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px); }
+  80% {
+    transform: translateX(10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
+@keyframes moveLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(100px); }
+  80% {
+    transform: translateX(-10px); }
+  100% {
+    opacity: 1;
+    transform: translateX(0); } }
+
 .header__primery {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -72,16 +102,24 @@ a {
       word-spacing: 2px;
       text-transform: uppercase;
       font-weight: 500;
-      font-family: "Poppins", sans-serif; }
+      font-family: "Poppins", sans-serif;
+      display: block;
+      animation: moveDown .8s; }
     .hero__text--main {
       margin: 1.6rem 0 1rem 0;
       font-size: 7rem;
-      font-family: "Playfair Display", serif; }
+      font-family: "Playfair Display", serif;
+      animation: moveRight 1s;
+      animation-delay: .7s;
+      animation-fill-mode: backwards; }
     .hero__text--paragraph {
       font-size: 2rem;
       font-weight: 300;
       font-style: italic;
-      font-family: "Poppins", sans-serif; }
+      font-family: "Poppins", sans-serif;
+      animation: moveLeft .6s;
+      animation-delay: 1.6s;
+      animation-fill-mode: backwards; }
 
 .testimonial {
   grid-column: col-start 3 / col-end 10;

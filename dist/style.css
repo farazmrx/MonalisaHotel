@@ -105,6 +105,18 @@ a {
   color: #f5b846;
   font-size: 1.5rem; }
 
+.btn--brown {
+  font-size: 1.3rem;
+  color: #000000;
+  padding: 1rem;
+  display: inline-block;
+  transition: all .5s; }
+  .btn--brown:hover {
+    color: #ffffff;
+    background-color: #a36732;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+
 .footer {
   background-color: peru;
   grid-column: full-start / full-end; }
@@ -173,8 +185,32 @@ a {
     font-size: 1.3rem; }
 
 .mainpage__explore {
-  background-color: greenyellow;
-  grid-column: col-start 2 / col-end 11; }
+  grid-column: col-start 2 / col-end 11;
+  margin: 10rem 0; }
+  .mainpage__explore--header {
+    text-align: center; }
+  .mainpage__explore--group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+    grid-gap: 2rem; }
+  .mainpage__explore--box {
+    background-color: #ffffff;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.2);
+    transition: all .5s; }
+    .mainpage__explore--box:hover {
+      box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.6);
+      transform: translateY(-3px); }
+    .mainpage__explore--box img {
+      width: 100%;
+      height: 25rem; }
+    .mainpage__explore--box div {
+      padding: 2rem; }
+      .mainpage__explore--box div span {
+        font-size: 1.2rem;
+        color: #879f8a; }
+      .mainpage__explore--box div h2 {
+        margin: 2rem 0;
+        font-family: "Poppins", sans-serif; }
 
 .mainpage__gallery {
   background-color: gray;

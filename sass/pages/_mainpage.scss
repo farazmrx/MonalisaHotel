@@ -101,13 +101,63 @@
 
     &__information {
         &--map {
-            background-color: yellow;
             grid-column: full-start / col-end 7;
         }
 
         &--content {
-            background-color: orange;
+            background-color: $color-white;
             grid-column: col-start 8 / full-end;
+            padding: 6rem 8vw;
+            display: grid;
+            align-content: center;
+        }
+    }
+}
+
+.information {
+    &__location {
+        &--city {
+            font-size: 2rem;
+            font-weight: 900;
+        }
+
+        &--country {
+            font-size: 1.6rem;
+            font-weight: 100;
+            color: $color-gray-dark-2;
+        }
+
+        &--paragraph {
+            font-size: 2.6rem;
+            color: $color-gray-dark-2;
+            font-family: $font-the-nautigal;
+        }
+    }
+
+    &__email {
+        &--tittle {
+            font-size: 2rem;
+        }
+
+        &--main {
+            cursor: pointer;
+            font-size: 2rem;
+            font-family: $font-lobster;
+
+        }
+    }
+
+    &__phone {
+        &--tittle {
+            display: block;
+            font-size: 1.6rem;
+            color: $color-gray-dark-2;
+        }
+
+        &--main {
+            font-size: 2.5rem;
+            font-family: $font-lobster;
+            font-weight: 100;
         }
     }
 }

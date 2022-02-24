@@ -254,8 +254,43 @@ a {
     display: block; }
 
 .footer {
-  background-color: peru;
-  grid-column: full-start / full-end; }
+  background-color: #262425;
+  grid-column: full-start / full-end;
+  padding: 4rem 15rem 1rem 15rem; }
+  .footer__list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-rows: repeat(5, 1fr);
+    grid-gap: 1rem; }
+  .footer__link {
+    color: #747474;
+    font-size: 1.6rem;
+    transition: all .2s; }
+    .footer__link:hover {
+      color: #acb9c8; }
+  .footer__copyright {
+    display: flex;
+    align-items: center;
+    padding: 2rem 0;
+    margin-top: 4rem;
+    border-top: 0.1px solid #747474;
+    color: #ffffff; }
+    .footer__copyright--logo {
+      font-size: 3rem;
+      font-family: "Poppins", sans-serif; }
+    .footer__copyright--text {
+      margin-right: auto;
+      margin-left: 1rem;
+      font-size: 1.5rem; }
+    .footer__copyright--social {
+      color: #747474; }
+      .footer__copyright--social i {
+        font-size: 1.6rem;
+        margin: 0 .5rem;
+        cursor: pointer;
+        transition: all .4s; }
+        .footer__copyright--social i:hover {
+          color: #ffffff; }
 
 .header {
   grid-column: full-start / full-end;

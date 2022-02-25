@@ -126,9 +126,28 @@ a {
       animation-fill-mode: backwards; }
 
 .roomlisting__hero {
-  background-color: blue;
+  background-image: linear-gradient(rgba(250, 235, 33, 0.4), rgba(250, 174, 33, 0.4)), url(../img/ourrooms-header.jpg);
+  background-size: cover;
+  background-position: center bottom;
   grid-column: full-start / full-end;
-  grid-row: 1 / span 2; }
+  grid-row: 1 / 3;
+  position: relative; }
+  .roomlisting__hero__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; }
+    .roomlisting__hero__text--main {
+      margin: 1.6rem 0 1rem 0;
+      font-size: 7rem;
+      font-family: "Playfair Display", serif; }
+    .roomlisting__hero__text--paragraph {
+      font-size: 2rem;
+      font-weight: 300;
+      font-style: italic;
+      font-family: "Poppins", sans-serif; }
 
 .testimonial {
   grid-column: col-start 3 / col-end 10;

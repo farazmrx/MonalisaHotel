@@ -1,0 +1,50 @@
+.test {
+    &-roomlisting__card--content {
+        &-1 {
+            background-color: red;
+            grid-column: full-start / col-end 7;
+        }
+    }
+}
+
+.roomlisting {
+    &__card {
+        &--content {
+            &-1 {
+                background-color: red;
+                grid-column: full-start / col-end 7;
+            }
+
+            &-2 {
+                background-color: rebeccapurple;
+                grid-column: col-start 6/ full-end;
+            }
+
+            &-3 {
+                background-color: aqua;
+                grid-column: full-start / col-end 7;
+            }
+        }
+
+        &--img {
+            &-1 {
+                background-color: orange;
+                grid-column: col-start 8 / full-end;
+            }
+
+            &-2 {
+                background-color: olivedrab;
+                grid-column: full-start / col-end 5;
+            }
+
+            &-3 {
+                background-color: olive;
+                grid-column: col-start 8 / full-end;
+            }
+        }
+    }
+
+    &__btn {
+        background-color: orchid;
+    }
+}

@@ -12,9 +12,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
-body {
-  background-color: #ebebeb; }
-
 ul, li {
   list-style: none; }
 
@@ -24,7 +21,14 @@ a {
 .mainpage__container {
   display: grid;
   grid-template-rows: 7rem calc(100vh - 7rem) min-content 35vw repeat(2, min-content) 35vw min-content;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  background-color: #ebebeb; }
+
+.roomlisting__container {
+  display: grid;
+  grid-template-rows: 7rem calc(100vh - 17rem) repeat(3, 35vw) repeat(2, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  grid-row-gap: 10rem; }
 
 @keyframes moveDown {
   0% {
@@ -120,6 +124,11 @@ a {
       animation: moveLeft .6s;
       animation-delay: 1.6s;
       animation-fill-mode: backwards; }
+
+.roomlisting__hero {
+  background-color: blue;
+  grid-column: full-start / full-end;
+  grid-row: 1 / span 2; }
 
 .testimonial {
   grid-column: col-start 3 / col-end 10;
@@ -295,6 +304,8 @@ a {
 .header {
   grid-column: full-start / full-end;
   background-color: #ffffff;
+  grid-row: 1 / 2;
+  z-index: 10;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -424,6 +435,37 @@ a {
   font-size: 2.5rem;
   font-family: "Lobster", cursive;
   font-weight: 100; }
+
+.test-roomlisting__card--content-1 {
+  background-color: red;
+  grid-column: full-start / col-end 7; }
+
+.roomlisting__card--content-1 {
+  background-color: red;
+  grid-column: full-start / col-end 7; }
+
+.roomlisting__card--content-2 {
+  background-color: rebeccapurple;
+  grid-column: col-start 6/ full-end; }
+
+.roomlisting__card--content-3 {
+  background-color: aqua;
+  grid-column: full-start / col-end 7; }
+
+.roomlisting__card--img-1 {
+  background-color: orange;
+  grid-column: col-start 8 / full-end; }
+
+.roomlisting__card--img-2 {
+  background-color: olivedrab;
+  grid-column: full-start / col-end 5; }
+
+.roomlisting__card--img-3 {
+  background-color: olive;
+  grid-column: col-start 8 / full-end; }
+
+.roomlisting__btn {
+  background-color: orchid; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

@@ -44,3 +44,9 @@
         }
     }
 }
+
+.roomlisting__hero {
+    background-color: blue;
+    grid-column: full-start / full-end;
+    grid-row: 1 / span 2;
+}

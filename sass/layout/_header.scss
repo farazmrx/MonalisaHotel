@@ -1,6 +1,8 @@
 .header {
     grid-column: full-start / full-end;
     background-color: $color-white;
+    grid-row: 1 / 2;
+    z-index: 10;
 
     display: flex;
     justify-content: space-evenly;

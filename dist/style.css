@@ -83,20 +83,20 @@ a {
 .u-mb-larger {
   margin-bottom: 8rem; }
 
-.hero {
+.mainpage__hero {
   background-image: linear-gradient(rgba(250, 235, 33, 0.4), rgba(250, 174, 33, 0.4)), url(../img/mainpage-header.jpg);
   background-size: cover;
   background-position: center;
   grid-column: full-start / full-end;
   position: relative; }
-  .hero__text {
+  .mainpage__hero__text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff; }
-    .hero__text--sub {
+    .mainpage__hero__text--sub {
       font-size: 1.6rem;
       letter-spacing: 2px;
       word-spacing: 2px;
@@ -105,14 +105,14 @@ a {
       font-family: "Poppins", sans-serif;
       display: block;
       animation: moveDown .8s; }
-    .hero__text--main {
+    .mainpage__hero__text--main {
       margin: 1.6rem 0 1rem 0;
       font-size: 7rem;
       font-family: "Playfair Display", serif;
       animation: moveRight 1s;
       animation-delay: .7s;
       animation-fill-mode: backwards; }
-    .hero__text--paragraph {
+    .mainpage__hero__text--paragraph {
       font-size: 2rem;
       font-weight: 300;
       font-style: italic;

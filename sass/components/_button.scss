@@ -4,10 +4,28 @@
     padding: 1rem;
     display: inline-block;
     transition: all .5s;
+    cursor: pointer;
     
     &:hover {
         color: $color-white;
         background-color: $color-brown-dark-2;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .5);
+    }
+}
+
+.btn--green {
+    font-size: 1.6rem;
+    color: $color-white;
+    background-color: $color-green-light-1;
+    padding: 1.5rem;
+    border: none;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $color-green-dark-1;
         transform: translateY(-3px);
         box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .5);
     }

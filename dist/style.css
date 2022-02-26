@@ -28,6 +28,7 @@ a {
   display: grid;
   grid-template-rows: 7rem calc(100vh - 17rem) repeat(3, 35vw) repeat(2, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  background-color: #ebebeb;
   grid-row-gap: 10rem; }
 
 @keyframes moveDown {
@@ -60,6 +61,12 @@ a {
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes wink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .header__primery {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -86,6 +93,15 @@ a {
 
 .u-mb-larger {
   margin-bottom: 8rem; }
+
+.u-available {
+  color: green; }
+
+.u-unavailable {
+  color: red; }
+
+.u-wink {
+  animation: wink 1.5s infinite; }
 
 .mainpage__hero {
   background-image: linear-gradient(rgba(250, 235, 33, 0.4), rgba(250, 174, 33, 0.4)), url(../img/mainpage-header.jpg);
@@ -460,28 +476,88 @@ a {
   grid-column: full-start / col-end 7; }
 
 .roomlisting__card--content-1 {
-  background-color: red;
-  grid-column: full-start / col-end 7; }
+  background-color: #ffffff;
+  grid-column: full-start / col-end 6;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
 
 .roomlisting__card--content-2 {
-  background-color: rebeccapurple;
-  grid-column: col-start 6/ full-end; }
+  background-color: #ffffff;
+  grid-column: col-start 7/ full-end;
+  padding: 6rem 8vw;
+  display: grid;
+  text-align: right;
+  align-content: center;
+  justify-items: end; }
 
 .roomlisting__card--content-3 {
-  background-color: aqua;
-  grid-column: full-start / col-end 7; }
+  background-color: #ffffff;
+  grid-column: full-start / col-end 6;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
 
 .roomlisting__card--img-1 {
-  background-color: orange;
-  grid-column: col-start 8 / full-end; }
+  background-image: url(../img/ourrooms-card3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: col-start 7 / full-end; }
 
 .roomlisting__card--img-2 {
-  background-color: olivedrab;
-  grid-column: full-start / col-end 5; }
+  background-image: url(../img/ourrooms-card2.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: full-start / col-end 6; }
 
 .roomlisting__card--img-3 {
-  background-color: olive;
-  grid-column: col-start 8 / full-end; }
+  background-image: url(../img/ourrooms-card1.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: col-start 7 / full-end; }
+
+.roomlisting__card--review {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem; }
+  .roomlisting__card--review h5 {
+    color: #747474; }
+  .roomlisting__card--review > * {
+    margin: 0 .2rem; }
+
+.roomlisting__card--header {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif; }
+
+.roomlisting__card--price-1 {
+  color: #747474; }
+
+.roomlisting__card--price-2 {
+  font-size: 2.5rem;
+  color: red; }
+
+.roomlisting__card--price-3 {
+  font-size: 1.4rem; }
+
+.roomlisting__card--paragraph {
+  font-size: 1.4rem;
+  color: #a36732; }
+
+.roomlisting__card--status div {
+  font-size: 1.5rem;
+  margin-bottom: .5rem; }
+  .roomlisting__card--status div span:first-child {
+    color: #747474; }
+
+.roomlisting__card--button {
+  font-size: 1.5rem;
+  color: #000000;
+  padding: .5rem; }
+  .roomlisting__card--button:hover {
+    background-color: #a36732;
+    color: #ffffff; }
 
 .roomlisting__btn {
   background-color: orchid; }

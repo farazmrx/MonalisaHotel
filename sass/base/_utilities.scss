@@ -6,5 +6,6 @@
 .u-available {color: green;}
 .u-unavailable {color: red;}
 .u-wink {
-    animation: wink 1.5s infinite;
+    animation: wink 1s infinite;
+    animation-direction: alternate-reverse;
 }

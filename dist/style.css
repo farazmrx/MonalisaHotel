@@ -12,9 +12,6 @@ html {
   box-sizing: border-box;
   font-size: 62.5%; }
 
-body {
-  background-color: #ebebeb; }
-
 ul, li {
   list-style: none; }
 
@@ -24,7 +21,15 @@ a {
 .mainpage__container {
   display: grid;
   grid-template-rows: 7rem calc(100vh - 7rem) min-content 35vw repeat(2, min-content) 35vw min-content;
-  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  background-color: #ebebeb; }
+
+.roomlisting__container {
+  display: grid;
+  grid-template-rows: 7rem calc(100vh - 17rem) repeat(3, 35vw) repeat(2, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  background-color: #ebebeb;
+  grid-row-gap: 10rem; }
 
 @keyframes moveDown {
   0% {
@@ -56,6 +61,12 @@ a {
     opacity: 1;
     transform: translateX(0); } }
 
+@keyframes wink {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .header__primery {
   font-size: 1.2rem;
   text-transform: uppercase;
@@ -82,6 +93,16 @@ a {
 
 .u-mb-larger {
   margin-bottom: 8rem; }
+
+.u-available {
+  color: green; }
+
+.u-unavailable {
+  color: red; }
+
+.u-wink {
+  animation: wink 1s infinite;
+  animation-direction: alternate-reverse; }
 
 .mainpage__hero {
   background-image: linear-gradient(rgba(250, 235, 33, 0.4), rgba(250, 174, 33, 0.4)), url(../img/mainpage-header.jpg);
@@ -121,6 +142,30 @@ a {
       animation-delay: 1.6s;
       animation-fill-mode: backwards; }
 
+.roomlisting__hero {
+  background-image: linear-gradient(rgba(250, 235, 33, 0.4), rgba(250, 174, 33, 0.4)), url(../img/ourrooms-header.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  grid-column: full-start / full-end;
+  grid-row: 1 / 3;
+  position: relative; }
+  .roomlisting__hero__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; }
+    .roomlisting__hero__text--main {
+      margin: 1.6rem 0 1rem 0;
+      font-size: 7rem;
+      font-family: "Playfair Display", serif; }
+    .roomlisting__hero__text--paragraph {
+      font-size: 2rem;
+      font-weight: 300;
+      font-style: italic;
+      font-family: "Poppins", sans-serif; }
+
 .testimonial {
   grid-column: col-start 3 / col-end 10;
   background-color: #ffffff;
@@ -148,10 +193,25 @@ a {
   color: #000000;
   padding: 1rem;
   display: inline-block;
-  transition: all .5s; }
+  transition: all .5s;
+  cursor: pointer; }
   .btn--brown:hover {
     color: #ffffff;
     background-color: #a36732;
+    transform: translateY(-3px);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
+
+.btn--green {
+  font-size: 1.6rem;
+  color: #ffffff;
+  background-color: #21992f;
+  padding: 1.5rem;
+  border: none;
+  display: inline-block;
+  transition: all .5s;
+  cursor: pointer; }
+  .btn--green:hover {
+    background-color: #879f8a;
     transform: translateY(-3px);
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.5); }
 
@@ -295,6 +355,8 @@ a {
 .header {
   grid-column: full-start / full-end;
   background-color: #ffffff;
+  grid-row: 1 / 2;
+  z-index: 10;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -424,6 +486,98 @@ a {
   font-size: 2.5rem;
   font-family: "Lobster", cursive;
   font-weight: 100; }
+
+.test-roomlisting__card--content-1 {
+  background-color: red;
+  grid-column: full-start / col-end 7; }
+
+.roomlisting__card--content-1 {
+  background-color: #ffffff;
+  grid-column: full-start / col-end 6;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+
+.roomlisting__card--content-2 {
+  background-color: #ffffff;
+  grid-column: col-start 7/ full-end;
+  padding: 6rem 8vw;
+  display: grid;
+  text-align: right;
+  align-content: center;
+  justify-items: end; }
+
+.roomlisting__card--content-3 {
+  background-color: #ffffff;
+  grid-column: full-start / col-end 6;
+  padding: 6rem 8vw;
+  display: grid;
+  align-content: center;
+  justify-items: start; }
+
+.roomlisting__card--img-1 {
+  background-image: url(../img/ourrooms-card3.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: col-start 7 / full-end; }
+
+.roomlisting__card--img-2 {
+  background-image: url(../img/ourrooms-card2.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: full-start / col-end 6; }
+
+.roomlisting__card--img-3 {
+  background-image: url(../img/ourrooms-card1.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-column: col-start 7 / full-end; }
+
+.roomlisting__card--review {
+  display: flex;
+  align-items: center;
+  font-size: 1.8rem; }
+  .roomlisting__card--review h5 {
+    color: #747474; }
+  .roomlisting__card--review > * {
+    margin: 0 .2rem; }
+
+.roomlisting__card--header {
+  font-size: 3.5rem;
+  font-family: "Poppins", sans-serif; }
+
+.roomlisting__card--price-1 {
+  color: #747474; }
+
+.roomlisting__card--price-2 {
+  font-size: 2.5rem;
+  color: red; }
+
+.roomlisting__card--price-3 {
+  font-size: 1.4rem; }
+
+.roomlisting__card--paragraph {
+  font-size: 1.4rem;
+  color: #a36732; }
+
+.roomlisting__card--status div {
+  font-size: 1.5rem;
+  margin-bottom: .5rem; }
+  .roomlisting__card--status div span:first-child {
+    color: #747474; }
+
+.roomlisting__card--button {
+  font-size: 1.5rem;
+  color: #000000;
+  padding: .5rem; }
+  .roomlisting__card--button:hover {
+    background-color: #a36732;
+    color: #ffffff; }
+
+.roomlisting__btn {
+  grid-column: 7 / 9;
+  justify-self: center; }
 
 /*!
  *  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome

@@ -1,0 +1,11 @@
+.roomdetails {
+    &__description {
+        background-color: olive;
+        grid-column: full-start / full-end;
+    }
+
+    &__related {
+        background-color: orange;
+        grid-column: center-start / center-end;
+    }
+}

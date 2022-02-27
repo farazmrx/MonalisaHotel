@@ -46,7 +46,7 @@
 }
 
 .roomlisting__hero {
-    background-image: linear-gradient(rgba(rgb(250, 235, 33), .4), rgba(rgb(250, 174, 33), .4)),url(../img/ourrooms-header.jpg);
+    background-image: linear-gradient(rgba(rgb(250, 235, 33), .2), rgba(rgb(250, 174, 33), .2)),url(../img/ourrooms-header.jpg);
     background-size: cover;
     background-position: center bottom;
     grid-column: full-start / full-end;
@@ -74,4 +74,9 @@
             font-family: $font-poppins;
         }
     }
+}
+
+.classicroom__hero {
+    background-color: red;
+    grid-column: full-start / full-end;
 }

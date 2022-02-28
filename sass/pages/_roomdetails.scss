@@ -8,4 +8,9 @@
         background-color: orange;
         grid-column: center-start / center-end;
     }
+
+    &__slider {
+            background-color: aqua;
+            grid-column: center-start / center-end;
+    }
 }

@@ -13,4 +13,9 @@
         grid-column: center-start / center-end;
         margin: 10rem 0;
     }
+
+    &__price {
+        grid-column: center-start / center-end;
+        margin: 0 auto 10rem auto;
+    }
 }

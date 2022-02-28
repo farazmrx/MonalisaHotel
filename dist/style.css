@@ -33,7 +33,7 @@ a {
 
 .roomdetails__container {
   display: grid;
-  grid-template-rows: 7rem calc(100vh - 7rem) repeat(4, min-content);
+  grid-template-rows: 7rem calc(100vh - 7rem) repeat(5, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   background-color: #ebebeb; }
 
@@ -109,6 +109,9 @@ a {
 .u-wink {
   animation: wink 1s infinite;
   animation-direction: alternate-reverse; }
+
+.u-text-center {
+  text-align: center; }
 
 .mainpage__hero {
   background-image: linear-gradient(rgba(250, 235, 33, 0.4), rgba(250, 174, 33, 0.4)), url(../img/mainpage-header.jpg);
@@ -616,6 +619,10 @@ a {
 .roomdetails__slider {
   grid-column: center-start / center-end;
   margin: 10rem 0; }
+
+.roomdetails__price {
+  grid-column: center-start / center-end;
+  margin: 0 auto 10rem auto; }
 
 .test-roomlisting__card--content-1 {
   background-color: red;

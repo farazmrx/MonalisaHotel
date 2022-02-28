@@ -30,3 +30,20 @@
         box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .5);
     }
 }
+
+.btn--green-light {
+    font-size: 1.6rem;
+    color: $color-white;
+    background-color: $color-green-light-2;
+    padding: 1.5rem 3rem;
+    border: none;
+    display: inline-block;
+    transition: all .5s;
+    cursor: pointer;
+    
+    &:hover {
+        background-color: $color-green-dark-1;
+        transform: translateY(-3px);
+        box-shadow: 0 1rem 2rem rgba($color: #000000, $alpha: .5);
+    }
+}

@@ -10,7 +10,7 @@
     }
 
     &__slider {
-            background-color: aqua;
-            grid-column: center-start / center-end;
+        grid-column: center-start / center-end;
+        margin: 10rem 0;
     }
 }

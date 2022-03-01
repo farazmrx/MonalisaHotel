@@ -201,24 +201,47 @@ a {
       font-style: italic;
       font-family: "Poppins", sans-serif; }
 
-.classicroom__hero {
+.deluxe__hero {
   background-image: url(../img/ourrooms-card2.jpg);
   background-size: cover;
   background-position: center bottom;
   grid-column: full-start / full-end;
   position: relative; }
-  .classicroom__hero__text {
+  .deluxe__hero__text {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     color: #ffffff; }
-    .classicroom__hero__text--main {
+    .deluxe__hero__text--main {
       margin: 1.6rem 0 1rem 0;
       font-size: 7rem;
       font-family: "Playfair Display", serif; }
-    .classicroom__hero__text--paragraph {
+    .deluxe__hero__text--paragraph {
+      font-size: 2rem;
+      font-weight: 300;
+      font-style: italic;
+      font-family: "Poppins", sans-serif; }
+
+.luxury__hero {
+  background-image: url(../img/ourrooms-card1.jpg);
+  background-size: cover;
+  background-position: center bottom;
+  grid-column: full-start / full-end;
+  position: relative; }
+  .luxury__hero__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #ffffff; }
+    .luxury__hero__text--main {
+      margin: 1.6rem 0 1rem 0;
+      font-size: 7rem;
+      font-family: "Playfair Display", serif; }
+    .luxury__hero__text--paragraph {
       font-size: 2rem;
       font-weight: 300;
       font-style: italic;

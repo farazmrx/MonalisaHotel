@@ -37,6 +37,12 @@ a {
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   background-color: #ebebeb; }
 
+.reservation__container {
+  display: grid;
+  grid-template-rows: 7rem calc(100vh - 7rem) repeat(4, min-content);
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
+  background-color: #ebebeb; }
+
 @keyframes moveDown {
   0% {
     opacity: 0;
@@ -246,6 +252,10 @@ a {
       font-weight: 300;
       font-style: italic;
       font-family: "Poppins", sans-serif; }
+
+.reservation__hero {
+  grid-column: full-start / full-end;
+  background-color: yellow; }
 
 .testimonial {
   grid-column: col-start 3 / col-end 10;
@@ -676,6 +686,18 @@ a {
   font-size: 2.5rem;
   font-family: "Lobster", cursive;
   font-weight: 100; }
+
+.availableroom {
+  background-color: red;
+  grid-column: center-start / center-end; }
+
+.overview {
+  background-color: aqua;
+  grid-column: center-start / center-end; }
+
+.confirm {
+  background-color: powderblue;
+  grid-column: center-start / center-end; }
 
 .roomdetails__description {
   background-color: #ffffff;

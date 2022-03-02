@@ -254,8 +254,27 @@ a {
       font-family: "Poppins", sans-serif; }
 
 .reservation__hero {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url(../img/reservation1.jpg);
+  background-size: cover;
+  background-position: center bottom;
   grid-column: full-start / full-end;
-  background-color: yellow; }
+  position: relative; }
+  .reservation__hero__text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #000000; }
+    .reservation__hero__text--main {
+      margin: 1.6rem 0 1rem 0;
+      font-size: 7rem;
+      font-family: "Playfair Display", serif; }
+    .reservation__hero__text--paragraph {
+      font-size: 2rem;
+      font-weight: 300;
+      font-style: italic;
+      font-family: "Poppins", sans-serif; }
 
 .testimonial {
   grid-column: col-start 3 / col-end 10;

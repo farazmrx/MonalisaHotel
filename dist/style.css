@@ -772,14 +772,39 @@ a {
       width: 20rem;
       height: 100%; }
 
-.overview {
-  background-color: aqua;
-  grid-column: col-start 2 / col-end 11; }
-
 .confirm {
-  background-color: powderblue;
   grid-column: col-start 2 / col-end 11;
   margin: 10rem 0; }
+  .confirm__boxes {
+    background-color: #ffffff;
+    padding: 4rem; }
+    .confirm__boxes--form {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+      grid-gap: 4rem; }
+      .confirm__boxes--form input {
+        border: none;
+        border-bottom: 1px solid #acb9c8;
+        padding-bottom: 10px;
+        transition: all .4s; }
+        .confirm__boxes--form input:focus {
+          outline: none;
+          border-bottom: 1px solid #000000; }
+          .confirm__boxes--form input:focus::placeholder {
+            color: #000000;
+            transition: all .4s; }
+      .confirm__boxes--form textarea {
+        grid-column: 1 / -1;
+        border: none;
+        border-bottom: 1px solid #acb9c8;
+        padding-bottom: 10px;
+        transition: all .4s; }
+        .confirm__boxes--form textarea:focus {
+          outline: none;
+          border-bottom: 1px solid #000000; }
+          .confirm__boxes--form textarea:focus::placeholder {
+            color: #000000;
+            transition: all .4s; }
 
 .roomdetails__description {
   background-color: #ffffff;

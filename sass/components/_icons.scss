@@ -5,3 +5,13 @@
 .fa-close {
     color: red;
 }
+
+.fa-star::before {
+    color: rgb(245, 184, 70);
+    font-size: 1.5rem;
+}
+
+.fa-star-half::before {
+    color: rgb(245, 184, 70);
+    font-size: 1.5rem;
+}

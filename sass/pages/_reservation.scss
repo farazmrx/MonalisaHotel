@@ -53,13 +53,53 @@
     }
 }
 
-.overview {
-    background-color: aqua;
-    grid-column: col-start 2 / col-end 11;
-}
-
 .confirm {
-    background-color: powderblue;
     grid-column: col-start 2 / col-end 11;
     margin: 10rem 0;
+
+    &__boxes {
+        background-color: $color-white;
+        padding: 4rem;
+
+        &--form {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+            grid-gap: 4rem;
+
+            input {
+                border: none;
+                border-bottom: 1px solid $color-gray-dark-1;
+                padding-bottom: 10px;
+                transition: all .4s;
+
+                &:focus {
+                    outline: none;
+                    border-bottom: 1px solid $color-black;
+
+                    &::placeholder {
+                        color: $color-black;
+                        transition: all .4s;
+                    }
+                }
+            }
+
+            textarea {
+                grid-column: 1 / -1;
+                border: none;
+                border-bottom: 1px solid $color-gray-dark-1;
+                padding-bottom: 10px;
+                transition: all .4s;
+
+                &:focus {
+                    outline: none;
+                    border-bottom: 1px solid $color-black;
+
+                    &::placeholder {
+                        color: $color-black;
+                        transition: all .4s;
+                    }
+                }
+            }
+        }
+    }
 }

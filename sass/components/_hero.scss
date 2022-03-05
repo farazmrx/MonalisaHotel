@@ -195,3 +195,33 @@
         }
     }
 }
+
+.aboutus__hero {
+    background-image: linear-gradient(rgba(#000000, .3), rgba(#000000, .3)),url(../img/gal-3.jpeg);
+    background-size: cover;
+    background-position: center bottom;
+    grid-column: full-start / full-end;
+    position: relative;
+
+    &__text {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        color: $color-white;
+
+        &--main {
+            margin: 1.6rem 0 1rem 0;    
+            font-size: 7rem;
+            font-family: $font-playfair;
+        }
+
+        &--paragraph {
+            font-size: 2rem;
+            font-weight: 300;
+            font-style: italic;
+            font-family: $font-poppins;
+        }
+    }
+}

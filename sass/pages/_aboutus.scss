@@ -1,0 +1,29 @@
+.aboutus {
+    &__since {
+        background-color: $color-white;
+        grid-column: full-start / full-end;
+        padding: 7rem 0;
+
+        display: grid;
+        grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
+
+        &--content {
+            grid-column: col-start 4 / col-end 9;
+
+            h5 {
+                font-size: 1.5rem;
+                font-family: $font-lobster;
+            }
+        }
+
+        &--fact {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
+        }
+
+        &--paragraph {
+            font-size: 1.6rem;
+            color: $color-gray-dark-2;
+        }
+    }
+}

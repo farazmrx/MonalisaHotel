@@ -2,6 +2,10 @@
     grid-column: col-start 3 / col-end 10;
     margin: 10rem 0;
 
+    @include respond(tablet) {
+        grid-column: full-start / full-end;
+    }
+
     &__boxes {
         display: grid;
         grid-template-rows: repeat(4, min-content);
@@ -36,6 +40,10 @@
             display: flex;
             padding: 2rem;
 
+            @include respond(phone) {
+                grid-column: full-start / full-end;
+            }
+
             &-left {
                 margin-right: auto;
 
@@ -49,6 +57,11 @@
         &--img {
             width: 20rem;
             height: 100%;
+
+            @include respond(phone) {
+                grid-column: full-start / full-end;
+                width: 100%;
+            }
         }
     }
 }
@@ -56,6 +69,10 @@
 .confirm {
     grid-column: col-start 2 / col-end 11;
     margin: 10rem 0;
+
+    @include respond(phone) {
+        grid-column: full-start / full-end;
+    }
 
     &__boxes {
         background-color: $color-white;

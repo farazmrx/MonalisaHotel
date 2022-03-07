@@ -7,6 +7,10 @@
             padding: 6rem 8vw;
             display: grid;
             align-content: center;
+
+            @include respond(tablet) {
+                grid-column: full-start / full-end;
+            }
         }
 
         &--picture {
@@ -14,6 +18,11 @@
             background-position: center;
             background-size: cover;
             grid-column: col-start 6 / full-end;
+
+            @include respond(tablet) {
+                grid-column: full-start / full-end;
+                background-position: center bottom;
+            }
         }
 
         &--group {
@@ -67,6 +76,10 @@
             grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
             // grid-column-gap: 1rem;
             grid-gap: 2rem;
+
+            @include respond(phone) {
+                grid-template-columns: repeat(auto-fit, minmax(45rem, 1fr));
+            }
         }
 
         &--box {
@@ -102,6 +115,10 @@
     &__information {
         &--map {
             grid-column: full-start / col-end 7;
+
+            @include respond(tablet) {
+                grid-column: full-start / full-end;
+            }
         }
 
         &--content {
@@ -110,6 +127,9 @@
             padding: 6rem 8vw;
             display: grid;
             align-content: center;
+            @include respond(tablet) {
+                grid-column: full-start / full-end;
+            }
         }
     }
 }

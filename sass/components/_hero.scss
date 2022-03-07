@@ -31,6 +31,10 @@
             animation: moveRight 1s;
             animation-delay: .7s;
             animation-fill-mode: backwards;
+
+            @include respond(phone) {
+                font-size: 5rem;
+            }
         }
 
         &--paragraph {
@@ -65,6 +69,10 @@
             margin: 1.6rem 0 1rem 0;    
             font-size: 7rem;
             font-family: $font-playfair;
+
+            @include respond(phone) {
+                font-size: 4rem;
+            }
         }
 
         &--paragraph {
@@ -72,6 +80,10 @@
             font-weight: 300;
             font-style: italic;
             font-family: $font-poppins;
+
+            @include respond(phone) {
+                font-size: 1.5rem;
+            }
         }
     }
 }
@@ -79,7 +91,7 @@
 .classicroom__hero {
     background-image: url(../img/ourrooms-card3.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     grid-column: full-start / full-end;
     position: relative;
 
@@ -95,6 +107,10 @@
             margin: 1.6rem 0 1rem 0;    
             font-size: 7rem;
             font-family: $font-playfair;
+
+            @include respond(phone) {
+                font-size: 5rem;
+            }
         }
 
         &--paragraph {
@@ -102,6 +118,10 @@
             font-weight: 300;
             font-style: italic;
             font-family: $font-poppins;
+
+            @include respond(phone) {
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -109,7 +129,7 @@
 .deluxe__hero {
     background-image: url(../img/ourrooms-card2.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     grid-column: full-start / full-end;
     position: relative;
 
@@ -125,6 +145,10 @@
             margin: 1.6rem 0 1rem 0;    
             font-size: 7rem;
             font-family: $font-playfair;
+
+            @include respond(phone) {
+                font-size: 5rem;
+            }
         }
 
         &--paragraph {
@@ -132,6 +156,10 @@
             font-weight: 300;
             font-style: italic;
             font-family: $font-poppins;
+
+            @include respond(phone) {
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -139,7 +167,7 @@
 .luxury__hero {
     background-image: url(../img/ourrooms-card1.jpg);
     background-size: cover;
-    background-position: center bottom;
+    background-position: center;
     grid-column: full-start / full-end;
     position: relative;
 
@@ -155,6 +183,10 @@
             margin: 1.6rem 0 1rem 0;    
             font-size: 7rem;
             font-family: $font-playfair;
+
+            @include respond(phone) {
+                font-size: 5rem;
+            }
         }
 
         &--paragraph {
@@ -162,6 +194,10 @@
             font-weight: 300;
             font-style: italic;
             font-family: $font-poppins;
+
+            @include respond(phone) {
+                font-size: 1.2rem;
+            }
         }
     }
 }
@@ -185,6 +221,10 @@
             margin: 1.6rem 0 1rem 0;    
             font-size: 7rem;
             font-family: $font-playfair;
+
+            @include respond(phone) {
+                font-size: 5rem;
+            }
         }
 
         &--paragraph {
@@ -215,6 +255,10 @@
             margin: 1.6rem 0 1rem 0;    
             font-size: 7rem;
             font-family: $font-playfair;
+
+            @include respond(phone) {
+                font-size: 5rem;
+            }
         }
 
         &--paragraph {

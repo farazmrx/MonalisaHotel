@@ -27,6 +27,10 @@
         margin-top: 4rem;
         border-top: .1px solid $color-gray-dark-2;
         color: $color-white;
+
+        @include respond(phone) {
+            flex-direction: column;
+        }
         &--logo {
             font-size: 3rem;
             font-family: $font-poppins;
@@ -36,6 +40,10 @@
             margin-right: auto;
             margin-left: 1rem;
             font-size: 1.5rem;
+
+            @include respond(phone) {
+                margin-right: 0;
+            }   
         }
 
         &--social {

@@ -713,9 +713,8 @@ a {
   .header__list {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-  .header__item {
-    margin-left: 5rem; }
+    align-items: center;
+    gap: 5rem; }
   .header__link {
     font-size: 2rem;
     font-weight: 400;

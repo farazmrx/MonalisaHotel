@@ -54,7 +54,7 @@ a {
     grid-template-rows: 5rem calc(100vh - 15rem) repeat(3, 40vw) repeat(2, min-content);
     grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end] ) [center-end] minmax(6rem, 1fr) [full-end];
     background-color: $color-gray-light-2;
-    grid-row-gap: 10rem;
+    row-gap: 10rem;
 
     @include respond(big-desktop) {
         grid-template-rows: 5rem calc(100vh - 15rem) repeat(3, 45vw) repeat(2, min-content);
@@ -62,12 +62,12 @@ a {
 
     @include respond(tablet) {
         grid-template-rows: 5rem calc(100vh - 5rem) repeat(3, min-content 50vw) repeat(2, min-content);
-        grid-row-gap: 0;
+        row-gap: 0;
     }
 
     @include respond(phone) {
         grid-template-rows: 5rem calc(100vh - 5rem) repeat(3, min-content 80vw) repeat(2, min-content);
-        grid-row-gap: 0;
+        row-gap: 0;
     }
 }
 

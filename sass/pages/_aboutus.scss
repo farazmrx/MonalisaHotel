@@ -21,7 +21,7 @@
             grid-template-columns: repeat(auto-fit, minmax(12.5rem, 1fr));
 
             @include respond(phone) {
-                grid-row-gap: 2rem;
+                row-gap: 2rem;
             }
         }
 

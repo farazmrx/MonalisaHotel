@@ -26,7 +26,7 @@ a {
 
 .mainpage__container {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem) min-content 35vw repeat(2, min-content) 35vw min-content;
+  grid-template-rows: 8rem calc(100vh - 8rem) min-content 35vw repeat(2, min-content) 35vw min-content;
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   background-color: #ebebeb; }
   @media (max-width: 48em) {
@@ -38,37 +38,37 @@ a {
 
 .roomlisting__container {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 15rem) repeat(3, 40vw) repeat(2, min-content);
+  grid-template-rows: 8rem calc(100vh - 18rem) repeat(3, 40vw) repeat(2, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   background-color: #ebebeb;
   row-gap: 10rem; }
   @media (min-width: 112.5em) {
     .roomlisting__container {
-      grid-template-rows: 5rem calc(100vh - 15rem) repeat(3, 45vw) repeat(2, min-content); } }
+      grid-template-rows: 8rem calc(100vh - 18rem) repeat(3, 45vw) repeat(2, min-content); } }
   @media (max-width: 48em) {
     .roomlisting__container {
-      grid-template-rows: 5rem calc(100vh - 5rem) repeat(3, min-content 50vw) repeat(2, min-content);
+      grid-template-rows: 8rem calc(100vh - 8rem) repeat(3, min-content 50vw) repeat(2, min-content);
       row-gap: 0; } }
   @media (max-width: 31.25em) {
     .roomlisting__container {
-      grid-template-rows: 5rem calc(100vh - 5rem) repeat(3, min-content 80vw) repeat(2, min-content);
+      grid-template-rows: 8rem calc(100vh - 8rem) repeat(3, min-content 80vw) repeat(2, min-content);
       row-gap: 0; } }
 
 .roomdetails__container {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem) repeat(4, min-content);
+  grid-template-rows: 8rem calc(100vh - 8rem) repeat(4, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   background-color: #ebebeb; }
 
 .reservation__container {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem) repeat(3, min-content);
+  grid-template-rows: 8rem calc(100vh - 8rem) repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   background-color: #ebebeb; }
 
 .aboutus__container {
   display: grid;
-  grid-template-rows: 5rem calc(100vh - 5rem) repeat(3, min-content);
+  grid-template-rows: 8rem calc(100vh - 8rem) repeat(3, min-content);
   grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end];
   background-color: #ebebeb; }
 
@@ -704,74 +704,40 @@ a {
   grid-column: full-start / full-end;
   background-color: #ffffff;
   grid-row: 1 / 2;
-  z-index: 10; }
-  .header__menu {
+  z-index: 10;
+  display: grid;
+  grid-template-columns: [full-start] minmax(6rem, 1fr) [center-start] repeat(12, [col-start] minmax(min-content, 9.5rem) [col-end]) [center-end] minmax(6rem, 1fr) [full-end]; }
+  .header__content {
+    grid-column: center-start / center-end;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem 1.5rem; }
-  .header__list {
+    justify-content: space-evenly;
+    align-items: center; }
+    @media (max-width: 48em) {
+      .header__content {
+        justify-content: space-between; } }
+  .header__logo--text {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: center; }
+    .header__logo--text-main {
+      font-size: 4rem;
+      font-family: "Lobster", cursive; }
+    .header__logo--text-sub {
+      font-size: 1.2rem; }
+  .header__menu--list {
+    display: flex;
     align-items: center;
-    gap: 5rem; }
-  .header__link {
-    font-size: 2rem;
-    font-weight: 400;
+    gap: 3rem; }
+  .header__menu--link {
+    font-size: 1.6rem;
     color: #000000;
-    transition: all .5s; }
-    .header__link:hover {
+    transition: all .4s; }
+    .header__menu--link:hover {
       color: #acb9c8; }
-    .header__link--active {
+    .header__menu--link--active {
+      font-size: 1.6rem;
+      transition: all .4s;
       color: #acb9c8; }
-  .header__logo {
-    font-size: 2.5rem;
-    font-family: "Lobster", cursive;
-    font-weight: 500;
-    color: #000000; }
-  @media (max-width: 48em) {
-    .header .header__list {
-      position: fixed;
-      left: -100%;
-      top: 5rem;
-      flex-direction: column;
-      background-color: #fff;
-      width: 100%;
-      border-radius: 10px;
-      text-align: center;
-      transition: 0.3s;
-      box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05); }
-    .header .header__list.active {
-      left: 0; }
-    .header .header__item {
-      margin: 2.5rem 0; }
-    .header .hamburger {
-      display: block;
-      cursor: pointer; } }
-
-.hamburger {
-  display: none; }
-
-.bar {
-  display: block;
-  width: 25px;
-  height: 2px;
-  margin: 3.5px auto;
-  -webkit-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
-  background-color: #101010; }
-
-.hamburger.active .bar:nth-child(2) {
-  opacity: 0; }
-
-.hamburger.active .bar:nth-child(1) {
-  transform: translateY(6px) rotate(45deg); }
-
-.hamburger.active .bar:nth-child(3) {
-  transform: translateY(-6px) rotate(-45deg); }
-
-.active, .dot:hover {
-  background-color: #fff; }
 
 .aboutus__since {
   background-color: #ffffff;

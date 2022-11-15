@@ -8,7 +8,6 @@
     "compile:sass": "node-sass sass/main.scss dist/style.comp.css",
     "compress:css": "node-sass dist/style.comp.css dist/style.min.css --output-style compressed",
     "build:css": "npm-run-all compile:sass compress:css",
-    
     "build:js": "webpack"
   },
   "repository": {
@@ -22,9 +21,9 @@
   },
   "homepage": "https://github.com/farazmrx/MonalisaHotel#readme",
   "devDependencies": {
-    "node-sass": "^7.0.1",
+    "node-sass": "^8.0.0",
     "npm-run-all": "^4.1.5",
-    "webpack": "^5.74.0",
+    "webpack": "^5.75.0",
     "webpack-cli": "^4.10.0"
   }
 }

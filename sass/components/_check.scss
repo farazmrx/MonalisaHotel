@@ -1,0 +1,72 @@
+.check {
+    grid-column: col-start 3 / col-end 10;
+    background-color: $color-white;
+    position: relative;
+    transform: translate(0 ,-50%);
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, .6);
+
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    &__date {
+        grid-column: 1 / 4;
+        padding: 3rem;
+
+        display: flex;
+        align-items: center;
+        
+        &--box {
+            padding: 0 3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+
+            label {
+                font-size: 1.6rem;
+                color: $color-gray-dark-2;
+                font-family: $font-poppins;
+                text-transform: uppercase;
+            }
+
+            input,select {
+                border: none;
+                border-bottom: 1px solid $color-gray-dark-2;
+                font-family: $font-lobster;
+                font-size: 1.8rem;
+                color: $color-gray-dark-2;
+            }
+
+            select {
+                background-color: transparent;
+            }
+
+            &:not(:last-child) {
+                border-right: 1px solid $color-gray-light-1;
+            }
+        }
+    }
+
+    &__box {
+        grid-column: 4 / 5;
+        background-color: $color-gray-light-2;
+        padding: 3rem;
+        text-align: center;
+
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        &--link {
+            font-size: 1.2rem;
+            color: $color-brown-dark-2;
+        }
+
+        &--btn {
+            color: $color-white;
+            background-color: $color-green-light-1;
+            border: none;
+            padding: 1.5rem 1rem;
+            cursor: pointer;
+        }
+    }
+}
